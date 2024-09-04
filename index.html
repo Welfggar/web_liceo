@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="es">
+
+<head>
+  <!-- Site Title-->
+  <title>Liceo Técnico Bernardo O'Higgins</title>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAygoaaLATD6wsF5pOA3Qb5vsixE2ta9UA&callback=inicializarMapa"></script>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Stylesheets-->
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Kanit:300,400,500,500i,600,900%7CRoboto:400,900">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+</head>
+
+<body onload="inicializarMapa()">
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="preloader-item">
+      </div>
+    </div>
+  </div>
+  <!-- Page-->
+  <div class="page">
+    <!-- Page Header-->
+    <header class="section page-header rd-navbar-dark">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed"
+          data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+          data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="166px" data-xl-stick-up-offset="166px"
+          data-xxl-stick-up-offset="166px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-panel">
+            <!-- RD Navbar Toggle-->
+            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-main"><span></span></button>
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel-inner container">
+              <div class="rd-navbar-collapse rd-navbar-panel-item rd-navbar-panel-item-left">
+                <!-- Owl Carousel-->
+                <div class="owl-carousel-navbar owl-carousel-inline-outer">
+                  <div class="owl-inline-nav">
+                    <button class="owl-arrow owl-arrow-prev"></button>
+                    <button class="owl-arrow owl-arrow-next"></button>
+                  </div>
+                  <div class="owl-carousel-inline-wrap">
+                    <div class="owl-carousel owl-carousel-inline" data-items="1" data-dots="false" data-nav="true"
+                      data-autoplay="true" data-autoplay-speed="3200" data-stage-padding="0" data-loop="true"
+                      data-margin="10" data-mouse-drag="false" data-touch-drag="false"
+                      data-nav-custom=".owl-carousel-navbar">
+                      <!-- Post Inline-->
+                      <article class="post-inline">
+                        <time class="post-inline-time" datetime="2024">Admisión, 2024</time>
+                        <p class="post-inline-title">Pre-Kinder a 4°Medio</p>
+                      </article>
+                      <article class="post-inline">
+                        <time class="post-inline-time" datetime="2024">Admisión, 2024</time>
+                        <p class="post-inline-title">Pre-Kinder a 4°Medio</p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rd-navbar-panel-item rd-navbar-panel-item-right">
+                <ul class="list-inline list-inline-bordered">
+                  <li><a class="link link-icon link-icon-left link-classic" href="#"><span
+                        class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Intranet</span></a></li>
+                </ul>
+              </div>
+              <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+                data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            </div>
+          </div>
+          <div class="rd-navbar-main">
+            <div class="rd-navbar-main-top">
+              <div class="rd-navbar-main-container container">
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a class="brand" href="./index.html"><img class="brand-logo"
+                      src="images/logobg.png" alt="" width="95" height="126" /></a>
+                </div>
+                <!-- RD Navbar List-->
+                <ul class="rd-navbar-list">
+                </ul>
+                <!-- RD Navbar Search-->
+                <!--<div class="rd-navbar-search">
+                    <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                    <form class="rd-search" action="#" data-search-live="rd-search-results-live" method="GET">
+                      <div class="form-wrap">
+                        <label class="form-label" for="rd-navbar-search-form-input">Enter your search request here...</label>
+                        <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
+                        <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                      </div>
+                      <button class="rd-search-form-submit fl-budicons-launch-search81" type="submit"></button>
+                    </form>
+                  </div>-->
+                <div class="rd-navbar-search">
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-main-bottom rd-navbar-darker">
+              <div class="rd-navbar-main-container container">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <!--seccion en navbar-->
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link">Establecimiento</a>
+                    <ul class="rd-menu rd-navbar-dropdown rd-navbar-open-right">
+                      <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                          href="#">Historia</a><span class="rd-navbar-submenu-toggle"></span>
+                      </li>
+                      <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                          href="#">Visión</a><span class="rd-navbar-submenu-toggle"></span>
+                      </li>
+                      <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                          href="#">Misión</a><span class="rd-navbar-submenu-toggle"></span>
+                      </li>
+                      <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                          href="#">Infraestructura</a><span class="rd-navbar-submenu-toggle"></span>
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Biblioteca</a>
+                          </li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Gimnasio</a>
+                          </li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Patio interior</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--seccion en navbar-->
+                  <li class="rd-nav-item"><a class="rd-nav-link">Estamentos</a>
+                    <ul class="rd-menu rd-navbar-dropdown rd-navbar-open-right">
+                      <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                          href="#">Departamentos</a><span class="rd-navbar-submenu-toggle"></span>
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Matemáticas</a>
+                          </li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Lenguaje</a>
+                          </li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Historia, CS. Sociales y
+                              Filosofía</a>
+                          </li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Ciencias</a>
+                          </li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Educación Física</a>
+                          </li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Inglés</a>
+                          </li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Arte y Tecnología</a>
+                          </li>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                      href="#">Unidad Técnico Pedagógica (UTP)</a><span class="rd-navbar-submenu-toggle"></span>
+                    <ul class="rd-menu rd-navbar-dropdown">
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Coordinación</a>
+                      </li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Evaluación</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <li class="rd-nav-item"><a class="rd-nav-link">Mineduc</a>
+                  <ul class="rd-menu rd-navbar-dropdown rd-navbar-open-right">
+                    <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                        target="_blank" href="https://admision.mineduc.cl/vitrina-vue/establecimiento/3657/">Admisión
+                        escolar</a><span class="rd-navbar-submenu-toggle"></span>
+                    </li>
+                    <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                        target="_blank" href="https://www.curriculumnacional.cl/estudiantes/">Aprendo en
+                        línea</a><span class="rd-navbar-submenu-toggle"></span>
+                    </li>
+                    <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                        target="_blank"
+                        href="https://www.curriculumnacional.cl/portal/Tipo/Textos-escolares-oficiales/Textos-Escolares-Licitados-por-Mineduc/">Textos
+                        escolares digital</a><span class="rd-navbar-submenu-toggle"></span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link">Sitios</a>
+                  <ul class="rd-menu rd-navbar-dropdown rd-navbar-open-right">
+                    <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                        target="_blank" href="https://napsis.cl/">Napsis
+                      </a><span class="rd-navbar-submenu-toggle"></span>
+                    </li>
+                    <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                        target="_blank" href="https://sige.mineduc.cl/Sige/Login">Sige
+                      </a><span class="rd-navbar-submenu-toggle"></span>
+                    </li>
+                    <li class="rd-dropdown-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-dropdown-link"
+                        target="_blank" href="index.html">Intranet
+                      </a><span class="rd-navbar-submenu-toggle"></span>
+                    </li>
+                  </ul>
+                </li>
+                </ul>
+                <!--seccion en navbar-->
+                <div class="rd-navbar-main-element">
+                  <ul class="list-inline list-inline-sm">
+                    <li><a class="icon icon-xs icon-light fa fa-facebook" target="_blank"
+                        href="https://www.facebook.com/liceotpbernardoohiggins"></a></li>
+                    <li><a class="icon icon-xs icon-light fa fa-instagram" target="_blank"
+                        href="https://www.instagram.com/liceo_bernardo_ohiggins/"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Swiper-->
+    <section class="section swiper-container swiper-slider swiper-classic bg-gray-2" data-loop="true"
+      data-autoplay="4000" data-simulate-touch="false" data-slide-effect="fade">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide text-center" data-slide-bg="img/banner5.jpg">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-6">
+                <div class="swiper-slide-caption">
+                  <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Titulo</h1>
+                  <h4 data-caption-animate="fadeInUp" data-caption-delay="200">Subtitulo
+                  </h4><a class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300"
+                    href="about-us.html">Leer Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-slide-bg="img/banner2.jpeg">
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-xl-5">
+                <div class="swiper-slide-caption">
+                  <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Titulo</h1>
+                  <h4 data-caption-animate="fadeInUp" data-caption-delay="200">Subtitulo</h4><a
+                    class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300"
+                    href="about-us.html">Leer Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-slide-bg="img/banner3.jpeg">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-5">
+                <div class="swiper-slide-caption">
+                  <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Titulo</h1>
+                  <h4 data-caption-animate="fadeInUp" data-caption-delay="200">Subtitulo<br class="d-none d-xl-block">
+                    SUBTITULO</h4><a class="button button-primary" data-caption-animate="fadeInUp"
+                    data-caption-delay="300" href="about-us.html">Leer Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-slide-bg="img/banner10.jpg">
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-xl-5">
+                <div class="swiper-slide-caption">
+                  <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Titulo</h1>
+                  <h4 data-caption-animate="fadeInUp" data-caption-delay="200">Subtitulo</h4><a
+                    class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300"
+                    href="about-us.html">Leer Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button swiper-button-prev"></div>
+      <div class="swiper-button swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Latest News-->
+    <section class="section section-md bg-gray-100">
+      <div class="container">
+        <div class="row row-50">
+          <div class="col-lg-8">
+            <div class="main-component">
+              <!-- Heading Component-->
+              <article class="heading-component">
+                <div class="heading-component-inner">
+                  <h5 class="heading-component-title">Últimos comunicados</h5>
+                  <a class="button button-xs button-gray-outline" href="#">Comunicados</a>
+                </div>
+              </article>
+              <div class="col-md-12">
+                <!-- Swiper-->
+                <div class="swiper-container swiper-slider post-slider" data-loop="false" data-autoplay="false"
+                  data-simulate-touch="false">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-slide-caption">
+                        <!-- Post Alice-->
+                        <article class="post-alice"><img src="images/post-slide-1-769x397.jpg" alt="" width="769"
+                            height="397" />
+                          <div class="post-alice-main">
+                            <!-- Badge-->
+                            <div class="badge badge-primary">Comunicado!
+                            </div>
+                            <h3 class="post-alice-title"><a href="#">Titulo del comunicado</a></h3>
+                            <div class="divider"></div>
+                            <div class="post-alice-time"><span class="icon mdi mdi-clock"></span>
+                              <time datetime="2020">01 de Diciembre, 2023</time>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide-caption">
+                        <!-- Post Alice-->
+                        <article class="post-alice"><img src="images/post-slide-2-769x397.jpg" alt="" width="769"
+                            height="397" />
+                          <div class="post-alice-main">
+                            <!-- Badge-->
+                            <div class="badge badge-primary">Comunicado!
+                            </div>
+                            <h3 class="post-alice-title"><a href="#">Titulo del comunicado</a>
+                            </h3>
+                            <div class="divider"></div>
+                            <div class="post-alice-time"><span class="icon mdi mdi-clock"></span>
+                              <time datetime="2020">30 de Noviembre, 2023</time>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide-caption">
+                        <!-- Post Alice-->
+                        <article class="post-alice"><img src="images/post-slide-2-769x397.jpg" alt="" width="769"
+                            height="397" />
+                          <div class="post-alice-main">
+                            <!-- Badge-->
+                            <div class="badge badge-primary">Comunicado!
+                            </div>
+                            <h3 class="post-alice-title"><a href="#">Titulo del comunicado</a>
+                            </h3>
+                            <div class="divider"></div>
+                            <div class="post-alice-time"><span class="icon mdi mdi-clock"></span>
+                              <time datetime="2020">28 de Noviembre, 2023</time>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Swiper Pagination-->
+                  <div class="swiper-pagination"></div>
+                  <!-- Swiper Navigation-->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+              <div class="main-component">
+              </div>
+              <article class="heading-component">
+                <div class="heading-component-inner">
+                  <h5 class="heading-component-title">Últimas Noticias</h5>
+                  <a class="button button-xs button-gray-outline" href="#">Noticias</a>
+                </div>
+              </article>
+              <div class="row row-30">
+                <div class="col-md-12">
+                  <!-- noticia 1-->
+                  <article class="post-future post-future-horizontal"><a class="post-future-figure" href="#"><img
+                        src="images/news-3-1-370x325.jpg" alt="" width="370" height="325" /></a>
+                    <div class="post-future-main">
+                      <h4 class="post-future-title"><a href="#">Título de la noticia "Noticia"</a></h4>
+                      <div class="post-future-meta">
+                        <!-- Badge-->
+                        <div class="post-future-time"><span class="icon mdi mdi-clock"></span>
+                          <time datetime="2020">15 de diciembre, 2023</time>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="post-future-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-12">
+                  <!-- noticia 2-->
+                  <article class="post-future post-future-horizontal"><a class="post-future-figure" href="#"><img
+                        src="images/news-3-2-370x325.jpg" alt="" width="370" height="325" /></a>
+                    <div class="post-future-main">
+                      <h4 class="post-future-title"><a href="#">Título de la noticia "Noticia"</a></h4>
+                      <div class="post-future-meta">
+                        <!-- Badge-->
+                        <div class="post-future-time"><span class="icon mdi mdi-clock"></span>
+                          <time datetime="2020">11 de diciembre, 2023</time>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="post-future-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-12">
+                  <!-- Post Future-->
+                  <article class="post-future post-future-horizontal"><a class="post-future-figure" href="#"><img
+                        src="images/news-3-3-370x325.jpg" alt="" width="370" height="325" /></a>
+                    <div class="post-future-main">
+                      <h4 class="post-future-title"><a href="#">Título de la noticia "Noticia"</a></h4>
+                      <div class="post-future-meta">
+                        <!-- Badge-->
+                        <div class="post-future-time"><span class="icon mdi mdi-clock"></span>
+                          <time datetime="2020">08 de diciembre, 2023</time>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="post-future-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-12">
+                  <!-- Post Future-->
+                  <article class="post-future post-future-horizontal"><a class="post-future-figure" href="#"><img
+                        src="images/news-3-3-370x325.jpg" alt="" width="370" height="325" /></a>
+                    <div class="post-future-main">
+                      <h4 class="post-future-title"><a href="#">Título de la noticia "Noticia"</a></h4>
+                      <div class="post-future-meta">
+                        <!-- Badge-->
+                        <div class="post-future-time"><span class="icon mdi mdi-clock"></span>
+                          <time datetime="2020">08 de diciembre, 2023</time>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="post-future-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Aside Block-->
+          <div class="col-lg-4">
+            <aside class="aside-components">
+              <div class="aside-component">
+                <!-- lista lateral-->
+                <article class="heading-component">
+                  <div class="heading-component-inner">
+                    <h5 class="heading-component-title">Accesos</h5>
+                  </div>
+                </article>
+
+                <div class="list-post-classic">
+                  <!-- Post Classic-->
+                  <article class="post-classic">
+                    <div class="post-classic-aside"><a class="post-classic-figure" href="#"><img
+                          src="images/blog-element-1-94x94.jpg" alt="" width="94" height="94" /></a></div>
+                    <div class="post-classic-main">
+                      <p class="post-classic-title"><a href="#">Biblioteca</a></p>
+                    </div>
+                  </article>
+                  <!-- Post Classic-->
+                  <article class="post-classic">
+                    <div class="post-classic-aside"><a class="post-classic-figure" href="#"><img
+                          src="images/blog-element-2-94x94.jpg" alt="" width="94" height="94" /></a></div>
+                    <div class="post-classic-main">
+                      <p class="post-classic-title"><a href="#">Reglamentos</a></p>
+                    </div>
+                  </article>
+                  <!-- Post Classic-->
+                  <article class="post-classic">
+                    <div class="post-classic-aside"><a class="post-classic-figure" href="#"><img
+                          src="images/blog-element-3-94x94.jpg" alt="" width="94" height="94" /></a></div>
+                    <div class="post-classic-main">
+                      <p class="post-classic-title"><a href="#">Protocolos</a></p>
+                    </div>
+                  </article>
+                  <!-- Post Classic-->
+                  <article class="post-classic">
+                    <div class="post-classic-aside"><a class="post-classic-figure" href="#"><img
+                          src="images/blog-element-4-94x94.jpg" alt="" width="94" height="94" /></a></div>
+                    <div class="post-classic-main">
+                      <p class="post-classic-title"><a href="#">Plan Lector</a></p>
+                    </div>
+                  </article>
+                  <!-- Post Classic-->
+                  <article class="post-classic">
+                    <div class="post-classic-aside"><a class="post-classic-figure" href="#"><img
+                          src="images/blog-element-4-94x94.jpg" alt="" width="94" height="94" /></a></div>
+                    <div class="post-classic-main">
+                      <p class="post-classic-title"><a href="#">Calificaciones</a></p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="aside-component">
+                <!-- Heading Component-->
+                <article class="heading-component">
+                  <div class="heading-component-inner">
+                    <h5 class="heading-component-title">Redes Sociales
+                    </h5>
+                  </div>
+                </article>
+                <!-- Buttons Media-->
+                <div class="group-sm group-flex"><a class="button-media button-media-facebook" target="_blank"
+                    href="https://www.facebook.com/liceotpbernardoohiggins">
+                    <h4 class="button-media-title">Facebook </h4>
+                    <p class="button-media-action">Síguenos<span
+                        class="icon material-icons-add_circle_outline icon-sm"></span></p><span
+                      class="button-media-icon fa-facebook"></span>
+                  </a><a class="button-media button-media-instagram" target="_blank"
+                    href="https://www.instagram.com/liceo_bernardo_ohiggins/">
+                    <h4 class="button-media-title">Instagram</h4>
+                    <p class="button-media-action">Síguenos<span
+                        class="icon material-icons-add_circle_outline icon-sm"></span></p><span
+                      class="button-media-icon fa-instagram"></span>
+                  </a></div>
+              </div>
+              <div class="aside-component">
+                <!-- Heading Component-->
+                <article class="heading-component">
+                  <div class="heading-component-inner">
+                    <h5 class="heading-component-title">Últimas fotos</h5>
+                    <a class="button button-xs button-gray-outline" href="#">Galería</a>
+                  </div>
+                </article>
+                <article class="gallery" data-lightgallery="group">
+                  <div class="row row-10 row-narrow">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item"
+                        href="images/gallery-soccer-1-original.jpg"><img src="images/gallery-soccer-1-212x212.jpg"
+                          alt="" />
+                        <div class="thumbnail-creative-overlay"></div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item"
+                        href="images/gallery-soccer-2-original.jpg"><img src="images/gallery-soccer-2-212x212.jpg"
+                          alt="" />
+                        <div class="thumbnail-creative-overlay"></div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item"
+                        href="images/gallery-soccer-3-original.jpg"><img src="images/gallery-soccer-3-212x212.jpg"
+                          alt="" />
+                        <div class="thumbnail-creative-overlay"></div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item"
+                        href="images/gallery-soccer-4-original.jpg"><img src="images/gallery-soccer-4-212x212.jpg"
+                          alt="" />
+                        <div class="thumbnail-creative-overlay"></div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item"
+                        href="images/gallery-soccer-5-original.jpg"><img src="images/gallery-soccer-5-212x212.jpg"
+                          alt="" />
+                        <div class="thumbnail-creative-overlay"></div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item"
+                        href="images/gallery-soccer-6-original.jpg"><img src="images/gallery-soccer-6-212x212.jpg"
+                          alt="" />
+                        <div class="thumbnail-creative-overlay"></div>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="aside-component">
+                <div class="owl-carousel-outer-navigation">
+                  <!-- Heading Component-->
+                  <article class="heading-component">
+                    <div class="heading-component-inner">
+                      <h5 class="heading-component-title">Reconocimientos</h5>
+                      <div class="owl-carousel-arrows-outline">
+                        <div class="owl-nav">
+                          <button class="owl-arrow owl-arrow-prev"></button>
+                          <button class="owl-arrow owl-arrow-next"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- Owl Carousel-->
+                  <div class="owl-carousel owl-spacing-1" data-items="1" data-dots="false" data-nav="true"
+                    data-autoplay="true" data-autoplay-speed="4000" data-stage-padding="0" data-loop="false"
+                    data-margin="30" data-mouse-drag="false" data-nav-custom=".owl-carousel-outer-navigation">
+                    <!--PRIMER RECONOCIMEINTO CODE-->
+                    <article class="product">
+                      <header class="product-header">
+                        <div class="product-figure"><img src="images/shop/product-1.png" alt="" /></div>
+                        <div class="product-buttons">
+                          <a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-1-original.jpg"
+                            data-lightgallery="item" style="font-size: 25px"></a>
+                        </div>
+                      </header>
+                      <footer class="product-content">
+                        <h6 class="product-title"><a href="#">Reconocimiento</a></h6>
+                      </footer>
+                    </article>
+                    <!--SEGUNDO RECONOCIMIENTO CODE-->
+                    <article class="product">
+                      <header class="product-header">
+                        <div class="product-figure"><img src="images/shop/product-1.png" alt="" /></div>
+                        <div class="product-buttons">
+                          <a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-1-original.jpg"
+                            data-lightgallery="item" style="font-size: 25px"></a>
+                        </div>
+                      </header>
+                      <footer class="product-content">
+                        <h6 class="product-title"><a href="#">Reconocimiento</a></h6>
+                      </footer>
+                    </article>
+                    <!--TERCER RECONOCIMIENTO CODE-->
+                    <article class="product">
+                      <header class="product-header">
+                        <div class="product-figure"><img src="images/shop/product-1.png" alt="" /></div>
+                        <div class="product-buttons">
+                          <a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-1-original.jpg"
+                            data-lightgallery="item" style="font-size: 25px"></a>
+                        </div>
+                      </header>
+                      <footer class="product-content">
+                        <h6 class="product-title"><a href="#">Reconocimiento</a></h6>
+                      </footer>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <!--UBICACION CODE-->
+              <div class="aside-component">
+                <article class="heading-component">
+                  <div class="heading-component-inner">
+                    <h5 class="heading-component-title">Ubicación</h5>
+                  </div>
+                </article>
+                <p>Caupolicán #1461 Chillán, Ñuble</p>
+                <p> </p>
+                <div class="aside-component">
+                  <div class="group-item">
+                    <!-- DIV CODE MAPA-->
+                    <div id="mapa" style="height: 400px;"></div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER-->
+    <a class="d-block" href="" target="blank"><img class="d-block w-100" src="images/banner-free-02.jpg" alt=""></a>
+    <footer class="section footer-classic footer-classic-dark context-dark">
+      <div class="footer-classic-main">
+        <div class="container">
+          <div class="row row-50">
+            <div class=""><a href="./index.html"><img class="" src="images/logobg.png" alt="" width="142"
+                  height="150" /></a>
+            </div>
+            <div class="col-lg-5 text-center text-sm-left">
+              <article
+                class="unit unit-sm-horizontal unit-middle justify-content-center justify-content-sm-start footer-classic-info">
+                <p class="post-classic-title">En el Liceo Técnico Profesional Libertador Bernardo O'Higgins,
+                  entendemos que la educación
+                  va más allá de las aulas. Ofrecemos programas integrales que incorporan la tecnología y la
+                  práctica profesional, preparando a nuestros estudiantes para los desafíos cambiantes de la
+                  sociedad moderna.</p>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <aside class="aside-components">
+                <div class="aside-component">
+                  <ul class="list-inline list-inline-bordered list-inline-bordered-lg">
+                    <li>
+                      <div class="unit unit-horizontal unit-middle">
+                        <div class="unit-left">
+                          <svg class="svg-color-secondary svg-sizing-35" x="0px" y="0px" width="72px" height="72px"
+                            viewbox="0 0 72 72">
+                            <path
+                              d="M36.002,0c-0.41,0-0.701,0.184-0.931,0.332c-0.23,0.149-0.4,0.303-0.4,0.303l-9.251,8.18H11.58 c-1.236,0-1.99,0.702-2.318,1.358c-0.329,0.658-0.326,1.3-0.326,1.3v11.928l-8.962,7.936V66c0,0.015-0.038,1.479,0.694,2.972 C1.402,70.471,3.006,72,5.973,72h30.03h30.022c2.967,0,4.571-1.53,5.306-3.028c0.736-1.499,0.702-2.985,0.702-2.985V31.338 l-8.964-7.936V11.475c0,0,0.004-0.643-0.324-1.3c-0.329-0.658-1.092-1.358-2.328-1.358H46.575l-9.251-8.18 c0,0-0.161-0.154-0.391-0.303C36.703,0.184,36.412,0,36.002,0z M36.002,3.325c0.49,0,0.665,0.184,0.665,0.184l6,5.306h-6.665 h-6.665l6-5.306C35.337,3.51,35.512,3.325,36.002,3.325z M12.081,11.977h23.92H59.92v9.754v2.121v14.816L48.511,48.762 l-10.078-8.911c0,0-0.307-0.279-0.747-0.548s-1.022-0.562-1.684-0.562c-0.662,0-1.245,0.292-1.686,0.562 c-0.439,0.268-0.747,0.548-0.747,0.548l-10.078,8.911L12.082,38.668V23.852v-2.121v-9.754H12.081z M8.934,26.867v9.015 l-5.091-4.507L8.934,26.867z M63.068,26.867l5.091,4.509l-5.091,4.507V26.867z M69.031,34.44v31.559 c0,0.328-0.103,0.52-0.162,0.771L50.685,50.684L69.031,34.44z M2.971,34.448l18.348,16.235L3.133,66.77 c-0.059-0.251-0.162-0.439-0.162-0.769C2.971,66.001,2.971,34.448,2.971,34.448z M36.002,41.956c0.264,0,0.437,0.057,0.546,0.104 c0.108,0.047,0.119,0.059,0.119,0.059l30.147,26.675c-0.3,0.054-0.79,0.207-0.79,0.207H36.002H5.98H5.972 c-0.003,0-0.488-0.154-0.784-0.207l30.149-26.675c0,0,0.002-0.011,0.109-0.059C35.555,42.013,35.738,41.956,36.002,41.956z">
+                            </path>
+                          </svg>
+                        </div>
+                        <div class="unit-body">
+                          <h6>Contacto</h6><a class="link"
+                            href="mailto:liceobernardoohiggins@daemchillan.cl">liceobernardoohiggins@daemchillan.cl</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="group-md group-middle">
+                    <div class="group-item">
+                      <ul class="list-inline list-inline-xs">
+                        <li><a class="icon icon-corporate fa fa-facebook" target="_blank"
+                            href="https://www.facebook.com/liceotpbernardoohiggins"></a></li>
+                        <li><a class="icon icon-corporate fa fa-instagram" target="_blank"
+                            href="https://www.instagram.com/liceo_bernardo_ohiggins/"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-classic-aside footer-classic-darken">
+        <div class="container">
+          <div class="layout-justify">
+            <!-- Rights-->
+            <p class="rights"><span>Liceo Técnico Profesional Bernardo
+                O'Higgins</span><span>&nbsp;&copy;&nbsp;</span><span
+                class="copyright-year"></span><span>.&nbsp;</span><span>Desarrollado por <a
+                  href="mailto:molina.samuel@outlook.cl">Samuel Molina Arriagada.</a></span></p>
+            <nav class="nav-minimal">
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Global Mailform Output-->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- Javascript-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+<script>
+  function inicializarMapa() {
+    // Coordenadas del lugar que deseas mostrar en el mapa
+    var coordenadas = { lat: -36.6266129, lng: -72.0934912 };
+    // Opciones de configuración del mapa
+    var opcionesMapa = {
+      center: coordenadas,
+      zoom: 15, // Ajusta el nivel de zoom según tus necesidades
+    };
+    // Crea el objeto del mapa
+    var mapa = new google.maps.Map(document.getElementById('mapa'), opcionesMapa);
+    // Agrega un marcador en el lugar específico
+    var marcador = new google.maps.Marker({
+      position: coordenadas,
+      map: mapa,
+      title: 'Liceo Tecnico Profesional Libertador Bernardo O\'Higgins',
+    });
+  }
+</script>
+<script>
+  // Variable para almacenar la clave de API
+  var apiKey = 'AIzaSyAygoaaLATD6wsF5pOA3Qb5vsixE2ta9UA'; // Reemplaza con tu clave de API
+</script>
+
+
+</html>
